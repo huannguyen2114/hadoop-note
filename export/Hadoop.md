@@ -7,14 +7,14 @@
     * [2. Hadoop cluster:](Hadoop.md#tong-quan-ve-kien-truc-hadoop-2-hadoop-cluster)
     * [3. MapReduce Framework Hadoop](Hadoop.md#tong-quan-ve-kien-truc-hadoop-3-mapreduce-framework-hadoop)
 * [Kiến trúc HDFS](Hadoop.md#kien-truc-hdfs)
-  - [1. NameNode](Hadoop.md#tong-quan-ve-kien-truc-hadoop-1-namenode)
-  - [2. DataNode](Hadoop.md#tong-quan-ve-kien-truc-hadoop-2-datanode)
-  - [3. Secondary NameNode](Hadoop.md#tong-quan-ve-kien-truc-hadoop-3-secondary-namenode)
-  - [4. Block trong HDFS](Hadoop.md#tong-quan-ve-kien-truc-hadoop-4-block-trong-hdfs)
-  - [5. Rack Awareness](Hadoop.md#tong-quan-ve-kien-truc-hadoop-5-rack-awareness)
+  * [1. NameNode](Hadoop.md#tong-quan-ve-kien-truc-hadoop-1-namenode)
+  * [2. DataNode](Hadoop.md#tong-quan-ve-kien-truc-hadoop-2-datanode)
+  * [3. Secondary NameNode](Hadoop.md#tong-quan-ve-kien-truc-hadoop-3-secondary-namenode)
+  * [4. Block trong HDFS](Hadoop.md#tong-quan-ve-kien-truc-hadoop-4-block-trong-hdfs)
+  * [5. Rack Awareness](Hadoop.md#tong-quan-ve-kien-truc-hadoop-5-rack-awareness)
 * [Đọc ghi dữ liệu trên HDFS](Hadoop.md#doc-ghi-du-lieu-tren-hdfs)
-  - [1. Ghi dữ liệu trên HDFS](Hadoop.md#tong-quan-ve-kien-truc-hadoop-1-ghi-du-lieu-tren-hdfs)
-  - [2. Đọc dữ liệu trong HDFS](Hadoop.md#tong-quan-ve-kien-truc-hadoop-2-doc-du-lieu-trong-hdfs)
+  * [1. Ghi dữ liệu trên HDFS](Hadoop.md#tong-quan-ve-kien-truc-hadoop-1-ghi-du-lieu-tren-hdfs)
+  * [2. Đọc dữ liệu trong HDFS](Hadoop.md#tong-quan-ve-kien-truc-hadoop-2-doc-du-lieu-trong-hdfs)
 * [APACHE Hadoop Yarn](Hadoop.md#apache-hadoop-yarn)
 
 ---
@@ -65,8 +65,6 @@ Kiến trúc HDFS:
 Gồm 2 thành phần chính là Namenode và Datanode theo cơ chế master-slave. Namenode đóng vai trò là người quản lý toàn bộ hoạt động.
 
 #### 2. Hadoop cluster:
-
-
 
 Trong hệ thống có hàng ngàn máy (node), các node sẽ được sắp xếp theo từng rack 
 ![Pasted image 20241028221642.png](image/Pasted%20image%2020241028221642.png)
@@ -205,8 +203,6 @@ Thành phần của YARN:
 * Node Manager (NN): Quản lý tài nguyên của từng node, các job chạy trên container của Node, khởi tạo các container.
 * Containers: Là nơi thực hiện việc tính toán.
 * Application Master: Nhận nhiệm vụ quản lý các jobs
-
-
 
 Về cơ bản:
 
